@@ -1,0 +1,37 @@
+0 info it worked if it ends with ok
+1 verbose cli [
+1 verbose cli   'C:\\Users\\roess\\Desktop\\node-v14.16.0-win-x64\\node.exe',
+1 verbose cli   'C:\\Users\\roess\\Desktop\\node-v14.16.0-win-x64\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'npm@latest'
+1 verbose cli ]
+2 info using npm@6.14.11
+3 info using node@v14.16.0
+4 verbose npm-session ee6d2fd7b02717a3
+5 silly install loadCurrentTree
+6 silly install readGlobalPackageData
+7 http fetch GET 304 https://registry.npmjs.org/npm 779ms (from cache)
+8 silly pacote tag manifest for npm@latest fetched in 823ms
+9 timing stage:loadCurrentTree Completed in 1821ms
+10 silly install loadIdealTree
+11 silly install cloneCurrentTreeToIdealTree
+12 timing stage:loadIdealTree:cloneCurrentTree Completed in 7ms
+13 silly install loadShrinkwrap
+14 timing stage:loadIdealTree:loadShrinkwrap Completed in 155ms
+15 silly install loadAllDepsIntoIdealTree
+16 silly resolveWithNewModule npm@7.6.3 checking installable status
+17 silly tarball trying https://registry.npmjs.org/npm/-/npm-7.6.3.tgz by hash: sha512-+Cs8TEtkfdQGTIPw8AeqVtNNHyo1Zw8HATzAFFWYnK7jQYgT/CatEy85+BlEoEpqvga2uaKqVrXsTAYj28emjg==
+18 verbose stack Error: kill ENOSYS
+18 verbose stack     at process.kill (internal/process/per_thread.js:200:13)
+18 verbose stack     at process.listener (C:\Users\roess\Desktop\node-v14.16.0-win-x64\node_modules\npm\node_modules\signal-exit\index.js:95:15)
+18 verbose stack     at process.emit (events.js:315:20)
+19 verbose cwd C:\Users\roess\Desktop\node-v14.16.0-win-x64
+20 verbose Windows_NT 10.0.19042
+21 verbose argv "C:\\Users\\roess\\Desktop\\node-v14.16.0-win-x64\\node.exe" "C:\\Users\\roess\\Desktop\\node-v14.16.0-win-x64\\node_modules\\npm\\bin\\npm-cli.js" "install" "npm@latest"
+22 verbose node v14.16.0
+23 verbose npm  v6.14.11
+24 error code ENOSYS
+25 error syscall kill
+26 error errno -4054
+27 error kill ENOSYS
+28 verbose exit [ -4054, true ]

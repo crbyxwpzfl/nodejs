@@ -1,0 +1,65 @@
+0 verbose cli [
+0 verbose cli   'C:\\Users\\roess\\Desktop\\nodejs\\node.exe',
+0 verbose cli   'C:\\Users\\roess\\Desktop\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+0 verbose cli   'install',
+0 verbose cli   'homerbidge-cmd4'
+0 verbose cli ]
+1 info using npm@7.6.3
+2 info using node@v14.16.0
+3 timing config:load:defaults Completed in 1ms
+4 timing config:load:file:C:\Users\roess\Desktop\nodejs\node_modules\npm\npmrc Completed in 1ms
+5 timing config:load:builtin Completed in 1ms
+6 timing config:load:cli Completed in 1ms
+7 timing config:load:env Completed in 1ms
+8 timing config:load:file:C:\Users\roess\Desktop\nodejs\.npmrc Completed in 2ms
+9 timing config:load:project Completed in 2ms
+10 timing config:load:file:C:\Users\roess\.npmrc Completed in 0ms
+11 timing config:load:user Completed in 0ms
+12 timing config:load:file:C:\Users\roess\Desktop\nodejs\etc\npmrc Completed in 1ms
+13 timing config:load:global Completed in 1ms
+14 timing config:load:cafile Completed in 0ms
+15 timing config:load:validate Completed in 0ms
+16 timing config:load:setUserAgent Completed in 0ms
+17 timing config:load:setEnvs Completed in 1ms
+18 timing config:load Completed in 9ms
+19 verbose npm-session a2fce6b92bc2e9c2
+20 timing npm:load Completed in 19ms
+21 timing arborist:ctor Completed in 1ms
+22 timing idealTree:init Completed in 175ms
+23 timing idealTree:userRequests Completed in 2ms
+24 silly idealTree buildDeps
+25 silly fetch manifest homerbidge-cmd4@*
+26 timing arborist:ctor Completed in 0ms
+27 http fetch GET 404 https://registry.npmjs.org/homerbidge-cmd4 1047ms
+28 http fetch GET 404 https://registry.npmjs.org/homerbidge-cmd4 769ms
+29 silly placeDep ROOT homerbidge-cmd4@ OK for:  want: *
+30 timing idealTree:#root Completed in 1823ms
+31 timing idealTree:node_modules/homerbidge-cmd4 Completed in 0ms
+32 timing idealTree:buildDeps Completed in 1825ms
+33 timing idealTree:fixDepFlags Completed in 7ms
+34 timing idealTree Completed in 2011ms
+35 timing command:install Completed in 2027ms
+36 verbose stack Error: 404 Not Found - GET https://registry.npmjs.org/homerbidge-cmd4 - Not found
+36 verbose stack     at C:\Users\roess\Desktop\nodejs\node_modules\npm\node_modules\npm-registry-fetch\check-response.js:123:15
+36 verbose stack     at processTicksAndRejections (internal/process/task_queues.js:93:5)
+36 verbose stack     at async Arborist.[nodeFromEdge] (C:\Users\roess\Desktop\nodejs\node_modules\npm\node_modules\@npmcli\arborist\lib\arborist\build-ideal-tree.js:892:19)
+36 verbose stack     at async Arborist.[buildDepStep] (C:\Users\roess\Desktop\nodejs\node_modules\npm\node_modules\@npmcli\arborist\lib\arborist\build-ideal-tree.js:838:11)
+36 verbose stack     at async Arborist.buildIdealTree (C:\Users\roess\Desktop\nodejs\node_modules\npm\node_modules\@npmcli\arborist\lib\arborist\build-ideal-tree.js:209:7)
+36 verbose stack     at async Promise.all (index 1)
+36 verbose stack     at async Arborist.reify (C:\Users\roess\Desktop\nodejs\node_modules\npm\node_modules\@npmcli\arborist\lib\arborist\reify.js:131:5)
+36 verbose stack     at async Install.install (C:\Users\roess\Desktop\nodejs\node_modules\npm\lib\install.js:120:5)
+37 verbose statusCode 404
+38 verbose pkgid homerbidge-cmd4@*
+39 verbose cwd C:\Users\roess\Desktop\nodejs
+40 verbose Windows_NT 10.0.19042
+41 verbose argv "C:\\Users\\roess\\Desktop\\nodejs\\node.exe" "C:\\Users\\roess\\Desktop\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "homerbidge-cmd4"
+42 verbose node v14.16.0
+43 verbose npm  v7.6.3
+44 error code E404
+45 error 404 Not Found - GET https://registry.npmjs.org/homerbidge-cmd4 - Not found
+46 error 404
+47 error 404 'homerbidge-cmd4@*' is not in the npm registry.
+48 error 404 You should bug the author to publish it (or use the name yourself!)
+49 error 404 Note that you can also install from a
+50 error 404 tarball, folder, http url, or git url.
+51 verbose exit 1

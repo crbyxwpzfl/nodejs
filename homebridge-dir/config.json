@@ -1,0 +1,86 @@
+{"bridge":
+	{"name": "Homebridge 0EF4",
+	"username": "1E:93:5B:4A:2E:F6",
+	"port": 51704,
+	"pin": "121-69-891"
+	},
+
+	"accessories":
+	[
+	],
+	
+	"platforms":
+	[{"platform": "Camera-ffmpeg",
+	"porthttp": 8080,
+	"localhttp": true,
+	"cameras":
+		[{"name": "screen",
+		"motion": true,
+		"doorbell": true,
+		"doorbellSwitch": false,
+		"switches": false,
+		"motionTimeout": 2,
+		"videoConfig":
+			{"source": "-f gdigrab -framerate 30 -i desktop",
+			"stillImageSource": "-f gdigrab -t 1 -i desktop",
+			"audio": false,
+			"maxWidth": 0,
+			"maxHeight": 0,
+			"forceMax": false,
+			"vcodec": "libx264",
+			"debug": false
+			}
+		}]
+	},
+	
+	{"platform": "Cmd4",
+	"name": "Cmd4",
+	 "outputConstants": false,
+	"restartRecover": true,
+	"accessories":
+		[{"type": "Lightbulb",
+		"displayName": "wall",
+		"on": "FALSE",
+		"brightness": 10,
+		"fetch": "Polled",
+		"polling": [{"characteristic": "on", "interval": 43200, "timeout": 8000},
+			{"characteristic": "brightness", "interval": 43200, "timeout": 8000}],
+		"stateChangeResponseTime": 1,
+		"state_cmd": "python .\\nodejs\\CMD4-PYS\\wall.py"
+		},
+		
+		{"type": "Lightbulb",
+		"displayName": "android",
+		"on": "FALSE",
+		"stateChangeResponseTime": 1,
+		"fetch": "Polled",
+		"polling": [{"characteristic": "on", "interval": 43200, "timeout": 8000}],
+		"state_cmd": "python .\\nodejs\\CMD4-PYS\\android.py"
+		},
+		
+		{"type": "Lightbulb",
+		"displayName": "bigSUR",
+		"on": "FALSE",
+		"stateChangeResponseTime": 1,
+		"fetch": "Polled",
+		"polling": [{"characteristic": "on", "interval": 43200, "timeout": 8000}],
+		"state_cmd": "python .\\nodejs\\CMD4-PYS\\bigsur.py"
+		},
+
+		{"type": "Lightbulb",
+		"displayName": "ambilight",
+		"on": "FALSE",
+		"stateChangeResponseTime": 3,
+		"brightness": 100,
+		"hue": 200,
+		"saturation": 100,
+		"fetch": "Polled",
+		"polling": [{"characteristic": "on", "interval": 43200, "timeout": 8000},
+			{"characteristic": "brightness", "interval": 43200, "timeout": 8000},
+			{"characteristic": "hue", "interval": 43200, "timeout": 8000},
+			{"characteristic": "saturation", "interval": 43200, "timeout": 8000}
+			],
+		"state_cmd": "python .\\nodejs\\CMD4-PYS\\ambilight.py"
+		}]
+	}]
+}

@@ -1,0 +1,73 @@
+0 verbose cli [
+0 verbose cli   'C:\\Users\\roess\\Desktop\\nodejs\\node.exe',
+0 verbose cli   'C:\\Users\\roess\\Desktop\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+0 verbose cli   'install',
+0 verbose cli   'npm@latest'
+0 verbose cli ]
+1 info using npm@7.6.3
+2 info using node@v14.16.0
+3 timing config:load:defaults Completed in 1ms
+4 timing config:load:file:C:\Users\roess\Desktop\nodejs\node_modules\npm\npmrc Completed in 2ms
+5 timing config:load:builtin Completed in 2ms
+6 timing config:load:cli Completed in 1ms
+7 timing config:load:env Completed in 1ms
+8 timing config:load:file:C:\Users\roess\Desktop\nodejs\.npmrc Completed in 1ms
+9 timing config:load:project Completed in 1ms
+10 timing config:load:file:C:\Users\roess\.npmrc Completed in 1ms
+11 timing config:load:user Completed in 1ms
+12 timing config:load:file:C:\Users\roess\Desktop\nodejs\etc\npmrc Completed in 0ms
+13 timing config:load:global Completed in 0ms
+14 timing config:load:cafile Completed in 0ms
+15 timing config:load:validate Completed in 1ms
+16 timing config:load:setUserAgent Completed in 0ms
+17 timing config:load:setEnvs Completed in 1ms
+18 timing config:load Completed in 9ms
+19 verbose npm-session b5afb675b72a3752
+20 timing npm:load Completed in 20ms
+21 timing arborist:ctor Completed in 1ms
+22 timing arborist:ctor Completed in 0ms
+23 timing idealTree:init Completed in 451ms
+24 http fetch GET 304 https://registry.npmjs.org/npm 310ms (from cache)
+25 timing idealTree:userRequests Completed in 333ms
+26 silly idealTree buildDeps
+27 silly fetch manifest npm@7.6.3
+28 silly placeDep ROOT npm@7.6.3 KEEP for:  want: 7.6.3
+29 timing idealTree:#root Completed in 3ms
+30 timing idealTree:buildDeps Completed in 5ms
+31 timing idealTree:fixDepFlags Completed in 3ms
+32 timing idealTree Completed in 795ms
+33 timing reify:loadTrees Completed in 796ms
+34 timing reify:diffTrees Completed in 7ms
+35 silly reify mark retired [
+35 silly reify   'C:\\Users\\roess\\Desktop\\nodejs\\node_modules\\npm',
+35 silly reify   'C:\\Users\\roess\\Desktop\\nodejs\\node_modules\\.bin\\npm',
+35 silly reify   'C:\\Users\\roess\\Desktop\\nodejs\\node_modules\\.bin\\npm.cmd',
+35 silly reify   'C:\\Users\\roess\\Desktop\\nodejs\\node_modules\\.bin\\npm.ps1',
+35 silly reify   'C:\\Users\\roess\\Desktop\\nodejs\\node_modules\\.bin\\npx',
+35 silly reify   'C:\\Users\\roess\\Desktop\\nodejs\\node_modules\\.bin\\npx.cmd',
+35 silly reify   'C:\\Users\\roess\\Desktop\\nodejs\\node_modules\\.bin\\npx.ps1'
+35 silly reify ]
+36 silly reify moves {
+36 silly reify   'C:\\Users\\roess\\Desktop\\nodejs\\node_modules\\npm': 'C:\\Users\\roess\\Desktop\\nodejs\\node_modules\\.npm-JDUHWC4A',
+36 silly reify   'C:\\Users\\roess\\Desktop\\nodejs\\node_modules\\.bin\\npm': 'C:\\Users\\roess\\Desktop\\nodejs\\node_modules\\.bin\\.npm-vFp3J2a6',
+36 silly reify   'C:\\Users\\roess\\Desktop\\nodejs\\node_modules\\.bin\\npm.cmd': 'C:\\Users\\roess\\Desktop\\nodejs\\node_modules\\.bin\\.npm.cmd-wbP2Bj4t',
+36 silly reify   'C:\\Users\\roess\\Desktop\\nodejs\\node_modules\\.bin\\npm.ps1': 'C:\\Users\\roess\\Desktop\\nodejs\\node_modules\\.bin\\.npm.ps1-LZd1smBt',
+36 silly reify   'C:\\Users\\roess\\Desktop\\nodejs\\node_modules\\.bin\\npx': 'C:\\Users\\roess\\Desktop\\nodejs\\node_modules\\.bin\\.npx-qlV7Ge56',
+36 silly reify   'C:\\Users\\roess\\Desktop\\nodejs\\node_modules\\.bin\\npx.cmd': 'C:\\Users\\roess\\Desktop\\nodejs\\node_modules\\.bin\\.npx.cmd-QMqdWPwo',
+36 silly reify   'C:\\Users\\roess\\Desktop\\nodejs\\node_modules\\.bin\\npx.ps1': 'C:\\Users\\roess\\Desktop\\nodejs\\node_modules\\.bin\\.npx.ps1-hjKQzK6V'
+36 silly reify }
+37 timing reify:rollback:retireShallow Completed in 4ms
+38 timing command:install Completed in 832ms
+39 verbose stack Error: EBUSY: resource busy or locked, rename 'C:\Users\roess\Desktop\nodejs\node_modules\npm' -> 'C:\Users\roess\Desktop\nodejs\node_modules\.npm-JDUHWC4A'
+40 verbose cwd C:\Users\roess\Desktop\nodejs
+41 verbose Windows_NT 10.0.19042
+42 verbose argv "C:\\Users\\roess\\Desktop\\nodejs\\node.exe" "C:\\Users\\roess\\Desktop\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "npm@latest"
+43 verbose node v14.16.0
+44 verbose npm  v7.6.3
+45 error code EBUSY
+46 error syscall rename
+47 error path C:\Users\roess\Desktop\nodejs\node_modules\npm
+48 error dest C:\Users\roess\Desktop\nodejs\node_modules\.npm-JDUHWC4A
+49 error errno -4082
+50 error EBUSY: resource busy or locked, rename 'C:\Users\roess\Desktop\nodejs\node_modules\npm' -> 'C:\Users\roess\Desktop\nodejs\node_modules\.npm-JDUHWC4A'
+51 verbose exit -4082
