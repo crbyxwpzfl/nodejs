@@ -32,10 +32,11 @@ when ERR run again but drag files causing the ERR out the dir while install is r
 
 #### gerneral npm
 ```
-npm list
-npm outdated
-npm uninstall
-npm install
+npm list :list install packages in current dir
+npm outdated :list outdated packages
+npm uninstall :uninstall a package
+npm install :install a package
+npm update :to update outdated packages
 ```
 
 # [homebridge source](https://github.com/homebridge/homebridge/)
