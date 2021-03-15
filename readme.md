@@ -1,7 +1,7 @@
 # personal portable homebridge v1.1.7
 #### start-homebridge
 ```powershell
-cd $env:DESKTOP; homebridge -D -U .\nodejs\homebridge-config
+cd $env:DESKTOP; node.exe .\nodejs\node_modules\homebridge\bin\homebridge homebridge -D -U .\nodejs\homebridge-dir
 ```
 #### setup
 add __DESKTOP__ environment variable<br/>
