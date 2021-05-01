@@ -4,10 +4,13 @@
 cd $env:DESKTOP; node.exe .\nodejs\node_modules\homebridge\bin\homebridge homebridge -D -U .\nodejs\homebridge-dir
 ```
 #### setup
-add __DESKTOP__ environment variable<br/>
-add __%DESKTOP%\path\to\nodejs-folder__ to PATH variable<br>
-add __IP__, __USR__, __PW__ environment variable for ambilight.py<br/>
-add __PLINK__ environment variable for bigSUR.py<br/>
+add 'DESKTOP' environment variable<br/>
+add '%DESKTOP%\path\to\nodejs' to 'PATH' variable<br>
+
+### dependencies for ambilight.py and android.py
+VirtualBox installed<br>
+'privates.py' with `pathtosshkey` variable set<br/>
+add `path\to\gists` to `PATH`env variable for global `plink` for bigSUR.py<br/>
 
 #### nodejs portable
 get binary zip from [nodejs](https://nodejs.org/en/download/)<br>
