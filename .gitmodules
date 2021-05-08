@@ -1,6 +1,3 @@
-[submodule "cmd4-pythons"]
-	path = cmd4-pythons
-	url = git@gist.github.com:dfb322b19f6b1a42819f37b29b7543f9.git
 [submodule "config-pythons"]
 	path = config-pythons
 	url = git@gist.github.com:dfb322b19f6b1a42819f37b29b7543f9.git
