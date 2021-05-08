@@ -4,7 +4,7 @@ import subprocess
 #import privates variable
 import sys
 import os
-sys.path.append(os.path.abspath("C:/Users/roess/Desktop/private"))
+sys.path.append(os.environ.get('privates'))
 import privates
 
 characteristic = sys.argv[3].strip("''")

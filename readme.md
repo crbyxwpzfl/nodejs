@@ -3,9 +3,10 @@
 ```powershell
 cd $env:DESKTOP; node.exe .\nodejs\node_modules\homebridge\bin\homebridge homebridge -D -U .\nodejs\homebridge-dir
 ```
-#### setup
+#### for global use
 add 'DESKTOP' environment variable<br/>
 add '%DESKTOP%\path\to\nodejs' to 'PATH' variable<br>
+add `privates` env variabel with value `path\to\private` #in config.json python imports privates.py via this env variable<br>
 
 ### dependencies for ambilight.py and android.py
 VirtualBox installed<br>

@@ -44,7 +44,7 @@
 		"stateChangeResponseTime": 1,
 		"fetch": "Polled",
 		"polling": [{"characteristic": "on", "interval": 43200, "timeout": 8000}],
-		"state_cmd": "python .\\nodejs\\CMD4-SCRIPTS\\android.py"
+		"state_cmd": "python -c \"import os; import sys; sys.path.append(os.environ.get('privates')); import privates; sys.path.append(privates.hbwinpath); import android\""
 		},
 		
 		{"type": "Lightbulb",
@@ -53,7 +53,7 @@
 		"stateChangeResponseTime": 1,
 		"fetch": "Polled",
 		"polling": [{"characteristic": "on", "interval": 43200, "timeout": 8000}],
-		"state_cmd": "python .\\nodejs\\CMD4-SCRIPTS\\bigsur.py"
+		"state_cmd": "python -c \"import os; import sys; sys.path.append(os.environ.get('privates')); import privates; sys.path.append(privates.hbwinpath); import bigsur\""
 		}]
 	}]
 }
