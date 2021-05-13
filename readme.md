@@ -1,4 +1,6 @@
 # personal portable homebridge v1.1.7
+# [windows pythons](https://gist.github.com/crbyxwpzfl/dfb322b19f6b1a42819f37b29b7543f9) [pi pythons](https://gist.github.com/crbyxwpzfl/fa59efdaf4693e059a9aa5aabab77731)
+
 #### start-homebridge
 ```powershell
 cd $env:DESKTOP; node.exe .\nodejs\node_modules\homebridge\bin\homebridge homebridge -D -U .\nodejs\homebridge-dir
